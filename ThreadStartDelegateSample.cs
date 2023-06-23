@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    
+
     public class ThreadStartDelegateSample
     {
         private static void DisplayNumbers()
@@ -16,16 +16,10 @@ namespace Multithreading
                 Console.WriteLine("Method1 :" + i);
             }
         }
-        private void DisplayNumbersWithParameters(object Max)
+
+
+        public ThreadStartDelegateSample()
         {
-            int Number = Convert.ToInt32(Max);
-            for (int i = 1; i <= Number; i++)
-            {
-                Console.WriteLine("Method4 :" + i);
-            }
-        }
-        
-        public ThreadStartDelegateSample() {
 
             ThreadStart displayNumbers = new ThreadStart(DisplayNumbers);
             //Passing the ThreadStart Delegate instance as a parameter to its constructor
@@ -61,32 +55,15 @@ namespace Multithreading
                 }
             });
             threadLambda.Start();
-
-            //------------------------------------------
-            //Thread Function with Parameter:
-          
-           // Thread displayNumbersWithParameters = new Thread(DisplayNumbersWithParameters);
-           
-
-            // We can also combine the above two statements into a single statement as shown below:
-             Thread displayNumbersWithParameters = new Thread(new ParameterizedThreadStart(DisplayNumbersWithParameters));
-
-            displayNumbersWithParameters.Start(5);
-
-            //we can also Pass String Value to a Thread Function:
-            //In this case, you will not get any compile-time error, but once you run the application,
-            //then you will get a runtime error:
-
-
-            //displayNumbersWithParameters.Start("Hi");
-
-            //--------------------------------------------
-
             Console.Read();
 
         }
-       
+        //------------------------------------------
+        
+
+
+
     }
-    
+
 }
 //https://dotnettutorials.net/lesson/constructors-of-thread-class-csharp/
