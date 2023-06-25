@@ -38,6 +38,12 @@ class Program
         //threadSynchronizationSemaphore.AdvancedSemaphoreDemo();
 
 
+        //ThreadSynchronizationSemaphoreSlim threadSynchronizationSemaphoreSlim = new ThreadSynchronizationSemaphoreSlim();
+        //threadSynchronizationSemaphoreSlim.SemaphoreSlimMethod1();
+        //threadSynchronizationSemaphoreSlim.SemaphoreSlimMethod2();
+
+
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
+//https://dotnettutorials.net/course/csharp-dot-net-tutorials/
