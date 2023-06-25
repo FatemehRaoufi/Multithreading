@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    internal class TryEnterMonitor
+    internal class MonitorTryEnter
     {
         private static readonly object lockPrintNumbers = new object();
         /// <summary>
@@ -14,7 +14,7 @@ namespace Multithreading
         /// attempts, for a specified amount of time, to acquire an exclusive lock on the specified object, 
         /// and automatically sets a value that indicates whether the lock was taken or not. 
         /// </summary>
-        public TryEnterMonitor() 
+        public MonitorTryEnter() 
         {
             Thread[] Threads = new Thread[3];
             for (int i = 0; i < 3; i++)
@@ -41,12 +41,13 @@ namespace Multithreading
             {
                 Console.WriteLine(Thread.CurrentThread.Name + "Trying to enter into the critical section");
                 Monitor.TryEnter(lockPrintNumbers, timeout, ref lockTaken);
+                int millisecondsTimeout = 100;
                 if (lockTaken)
                 {
                     Console.WriteLine(Thread.CurrentThread.Name + "Entered into the critical section");
                     for (int i = 0; i < 5; i++)
                     {
-                        Thread.Sleep(100);
+                        Thread.Sleep(millisecondsTimeout);
                         Console.Write(i + ",");
                     }
                     Console.WriteLine();

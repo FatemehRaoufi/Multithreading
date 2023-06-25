@@ -29,6 +29,14 @@ class Program
 
         //TryEnterMonitor tryEnterMonitor = new TryEnterMonitor();
 
+        //MutexProtectSharedResource mutexProtectSharedResource = new MutexProtectSharedResource();
+        //mutexProtectSharedResource.CallMutexDemo();
+        //mutexProtectSharedResource.CallIsSingleInstance();
+
+        //ThreadSynchronizationSemaphore threadSynchronizationSemaphore = new ThreadSynchronizationSemaphore();
+        //threadSynchronizationSemaphore.SemaphoreDemo();
+        //threadSynchronizationSemaphore.AdvancedSemaphoreDemo();
+
 
     }
 }

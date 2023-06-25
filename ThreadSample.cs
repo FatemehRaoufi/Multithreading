@@ -16,6 +16,7 @@ namespace Multithreading
         private static void Method2()
         {
             Console.WriteLine("Method2 Started using " + Thread.CurrentThread.Name);
+            int millisecondsTimeout = 10000;
             for (int i = 1; i <= 5; i++)
             {
                 Console.WriteLine("Method2 :" + i);
@@ -23,7 +24,7 @@ namespace Multithreading
                 {
                     Console.WriteLine("Performing the Database Operation Started");
                     //Sleep for 10 seconds
-                    Thread.Sleep(10000);
+                    Thread.Sleep(millisecondsTimeout);
                     Console.WriteLine("Performing the Database Operation Completed");
                 }
             }

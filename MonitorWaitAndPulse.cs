@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    internal class WaitAndPulseMonitor
+    internal class MonitorWaitAndPulse
     {
         //Upto the limit numbers will be printed on the Console
         const int numberLimit = 20;
 
         static readonly object _lockMonitor = new object();
-        public WaitAndPulseMonitor()
+        public MonitorWaitAndPulse()
         {
             Thread EvenThread = new Thread(PrintEvenNumbers);
             Thread OddThread = new Thread(PrintOddNumbers);
@@ -22,7 +22,8 @@ namespace Multithreading
 
             //Puase for 10 ms, to make sure Even thread has started 
             //or else Odd thread may start first resulting different sequence.
-            Thread.Sleep(100);
+            int millisecondsTimeout = 100;
+            Thread.Sleep(millisecondsTimeout);
 
             //Next, Start the Odd thread.
             OddThread.Start();

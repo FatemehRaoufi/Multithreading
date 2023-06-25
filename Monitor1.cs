@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    internal class ThreadSynchronizationMonitor1
+    internal class Monitor1
     {
         private static readonly object lockPrintNumbers = new object();
         /// <summary>
@@ -15,7 +15,7 @@ namespace Multithreading
         /// we can also use this Monitor Class to protect the shared resources in a multi-threaded environment from concurrent access. 
         /// This can be done by acquiring an exclusive lock on the object so that only one thread can enter the critical section at any given point in time.
         /// </summary>
-        public ThreadSynchronizationMonitor1()
+        public Monitor1()
         {
             Thread[] Threads = new Thread[3];
             for (int i = 0; i < 3; i++)
@@ -40,9 +40,11 @@ namespace Multithreading
             {
                 Monitor.Enter(lockPrintNumbers);
                 Console.WriteLine(Thread.CurrentThread.Name + " Entered into the critical section");
+                int millisecondsTimeout = 100;
+                
                 for (int i = 0; i < 5; i++)
                 {
-                    Thread.Sleep(100);
+                    Thread.Sleep(millisecondsTimeout);
                     Console.Write(i + ",");
                 }
                 Console.WriteLine();

@@ -34,7 +34,8 @@ namespace Multithreading
             lock (lockObject)
             {
                 Console.Write("[Welcome To The ");
-                Thread.Sleep(1000);
+                int millisecondsTimeout = 10000;
+                Thread.Sleep(millisecondsTimeout);
                 Console.WriteLine("World of Dotnet!]");
             }
         }

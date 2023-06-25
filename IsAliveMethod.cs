@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    internal class IsAlive
+    internal class IsAliveMethod
     {
 
         /// <summary>
@@ -16,7 +16,7 @@ namespace Multithreading
         /// </summary>
 
         HelperClass helperClass = new HelperClass();
-        public IsAlive() {
+        public IsAliveMethod() {
 
             Console.WriteLine("Main Thread Started");
 

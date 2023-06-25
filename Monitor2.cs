@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multithreading
 {
-    internal class ThreadSynchronizationMonitor2
+    internal class Monitor2
     {
         private static readonly object lockPrintNumberst = new object();
         /// <summary>
@@ -18,7 +18,7 @@ namespace Multithreading
         /// and false indicates that it does not acquire a lock on the object 
         /// and again in the finally block we are checking the boolean value and accordingly we are releasing the lock. 
         /// </summary>
-        public ThreadSynchronizationMonitor2()
+        public Monitor2()
         {
             Thread[] Threads = new Thread[3];
             for (int i = 0; i < 3; i++)
@@ -42,12 +42,14 @@ namespace Multithreading
             try
             {
                 Monitor.Enter(lockPrintNumberst, ref IsLockTaken);
+                int millisecondsTimeout = 100;
+
                 if (IsLockTaken)
                 {
                     Console.WriteLine(Thread.CurrentThread.Name + "Entered into the critical section");
                     for (int i = 0; i < 5; i++)
                     {
-                        Thread.Sleep(100);
+                        Thread.Sleep(millisecondsTimeout);
                         Console.Write(i + ",");
                     }
                     Console.WriteLine();
