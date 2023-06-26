@@ -42,13 +42,17 @@ class Program
         //threadSynchronizationSemaphoreSlim.SemaphoreSlimMethod1();
         //threadSynchronizationSemaphoreSlim.SemaphoreSlimMethod2();
 
-        PerformanceTesting performanceTesting = new PerformanceTesting();
+        //PerformanceTesting performanceTesting = new PerformanceTesting();
         //performanceTesting.PerformanceTestingSingleThread();
         //performanceTesting.PerformanceTestingMultipleThreads();
-        performanceTesting.PerformanceTestingThreadsVsThreadPool();
+        //performanceTesting.PerformanceTestingThreadsVsThreadPool();
 
         // ThreadPoolSample threadPoolSample = new ThreadPoolSample();
-        // threadPoolSample.
+
+        ForegroundBackgroundThreads foregroundBackgroundThreads = new ForegroundBackgroundThreads();
+        //foregroundBackgroundThreads.BackgroundMethod2();
+        //foregroundBackgroundThreads.MultipleForegroundThreads();
+        foregroundBackgroundThreads.BackgroundForegroundThreadsMethod();
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
