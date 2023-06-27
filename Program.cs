@@ -49,10 +49,16 @@ class Program
 
         // ThreadPoolSample threadPoolSample = new ThreadPoolSample();
 
-        ForegroundBackgroundThreads foregroundBackgroundThreads = new ForegroundBackgroundThreads();
+        //ForegroundBackgroundThreads foregroundBackgroundThreads = new ForegroundBackgroundThreads();
         //foregroundBackgroundThreads.BackgroundMethod2();
         //foregroundBackgroundThreads.MultipleForegroundThreads();
-        foregroundBackgroundThreads.BackgroundForegroundThreadsMethod();
+        //foregroundBackgroundThreads.BackgroundForegroundThreadsMethod();
+
+        //AutoResetManualResetEvent autoResetManualResetEvent = new AutoResetManualResetEvent();
+        //autoResetManualResetEvent.AutoResetEvent();
+        //autoResetManualResetEvent.ManualResetEvent();
+        //autoResetManualResetEvent.MultiSetWaitOneAutoResetEvent();
+        //autoResetManualResetEvent.MultiSetWaitOneManualResetEvent();
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
