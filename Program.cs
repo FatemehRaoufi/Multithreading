@@ -60,7 +60,9 @@ class Program
         //autoResetManualResetEvent.MultiSetWaitOneAutoResetEvent();
         //autoResetManualResetEvent.MultiSetWaitOneManualResetEvent();
 
-        ThreadLifeCycle threadLifeCycle = new ThreadLifeCycle();
+        //ThreadLifeCycle threadLifeCycle = new ThreadLifeCycle();
+
+        //ThreadsPriorities threadsPriorities = new ThreadsPriorities();
 
     }
 }
