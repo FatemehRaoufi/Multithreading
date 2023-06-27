@@ -59,6 +59,9 @@ class Program
         //autoResetManualResetEvent.ManualResetEvent();
         //autoResetManualResetEvent.MultiSetWaitOneAutoResetEvent();
         //autoResetManualResetEvent.MultiSetWaitOneManualResetEvent();
+
+        ThreadLifeCycle threadLifeCycle = new ThreadLifeCycle();
+
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
