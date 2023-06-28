@@ -72,3 +72,4 @@ class Program
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
 //https://dotnettutorials.net/course/csharp-dot-net-tutorials/
+//https://dotnettutorials.net/lesson/how-to-debug-a-multi-threaded-application-in-csharp/

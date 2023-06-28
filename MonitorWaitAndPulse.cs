@@ -121,3 +121,4 @@ namespace Multithreading
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
+//https://dotnettutorials.net/lesson/inter-thread-communication-in-csharp/
