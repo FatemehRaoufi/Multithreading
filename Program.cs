@@ -64,6 +64,10 @@ class Program
 
         //ThreadsPriorities threadsPriorities = new ThreadsPriorities();
 
+        //ThreadTerminate threadTerminate = new ThreadTerminate();
+        //threadTerminate.AbortStateInfoEvent();
+        //threadTerminate.ThreadAbortEvent();
+        //threadTerminate.AbortOnRunningThreadEvent();
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/
