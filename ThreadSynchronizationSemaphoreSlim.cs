@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     /// <summary>
     /// The SemaphoreSlim Class in C# is recommended for synchronization within a single app. 

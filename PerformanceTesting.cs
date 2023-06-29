@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace Multithreading
 {
@@ -42,9 +37,9 @@ namespace Multithreading
             }
             Console.WriteLine($"Sum of odd numbers = {Oddsum}");
         }
-        
+
         //Performance Testing With Single Processor:
-        public void PerformanceTestingSingleThread() 
+        public void PerformanceTestingSingleThread()
         {
             Stopwatch stopwatch = Stopwatch.StartNew();
             stopwatch = Stopwatch.StartNew();
@@ -54,7 +49,7 @@ namespace Multithreading
             Console.WriteLine($"Total time in milliseconds : {stopwatch.ElapsedMilliseconds}");//390
             Console.ReadKey();
         }
-              
+
         //---------------------------------
         public void PerformanceTestingMultipleThreads()
         {
@@ -70,7 +65,7 @@ namespace Multithreading
             Console.WriteLine($"Total time in milliseconds : {stopwatch.ElapsedMilliseconds}");//178
             Console.ReadKey();
         }
-        
+
         //------------------------------------------
         public void PerformanceTestingThreadsVsThreadPool()
         {

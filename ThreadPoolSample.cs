@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     /// <summary>
     /// The Thread pool in C# is nothing but a collection of threads that can be reused to perform a number of tasks in the background. 
@@ -17,7 +11,8 @@ namespace Multithreading
         //whether the thread is a background thread or not, and whether it is from a thread pool or not.
         //And we want to execute this method 10 times using the thread pool threads.
         //So, here we use a simple for each loop and use the ThreadPool class and call that method.
-        public ThreadPoolSample() {
+        public ThreadPoolSample()
+        {
             for (int i = 0; i < 10; i++)
             {
                 ThreadPool.QueueUserWorkItem(new WaitCallback(MyMethod));

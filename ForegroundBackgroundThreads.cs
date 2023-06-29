@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     /// <summary>
     /// Foreground threads:
@@ -43,7 +34,7 @@ namespace Multithreading
             //the main thread or main application
             Console.WriteLine("Main Thread Exited");
         }
-        
+
         public void BackgroundMethod2()
         {
             // A thread created here to run Method1 Parallely
@@ -61,7 +52,7 @@ namespace Multithreading
             //As the Main thread (i.e. foreground thread exits the application)
             //Automatically, the background thread quits the application
         }
-        
+
         // Static method
         static void Method1()
         {
@@ -134,7 +125,7 @@ namespace Multithreading
         /// The foreground thread keeps the process running until completes it’s for loop and terminates. 
         /// The foreground thread has finished execution, the process is terminated before the background thread has completed execution.
         /// </summary>
-        public void BackgroundForegroundThreadsMethod ()
+        public void BackgroundForegroundThreadsMethod()
         {
             ThreadingTest foregroundTest = new ThreadingTest(5);
             //Creating a Coreground Thread
@@ -167,7 +158,7 @@ namespace Multithreading
         }
 
     }
-    }
+}
 
 //https://dotnettutorials.net/lesson/foreground-and-background-threads-in-csharp/
 

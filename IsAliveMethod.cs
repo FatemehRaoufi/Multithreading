@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class IsAliveMethod
     {
@@ -16,13 +10,14 @@ namespace Multithreading
         /// </summary>
 
         HelperClass helperClass = new HelperClass();
-        public IsAliveMethod() {
+        public IsAliveMethod()
+        {
 
             Console.WriteLine("Main Thread Started");
 
-            
+
             Thread thread1 = new Thread(helperClass.Method1);
-           
+
             thread1.Start();
 
             if (thread1.IsAlive)
@@ -46,7 +41,7 @@ namespace Multithreading
             Console.WriteLine("Main Thread Ended");
             Console.Read();
         }
-       
+
 
     }
 }

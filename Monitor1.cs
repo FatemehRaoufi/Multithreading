@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class Monitor1
     {
@@ -31,7 +25,7 @@ namespace Multithreading
             }
             Console.ReadLine();
         }
-        
+
         public static void PrintNumbers()
         {
             Console.WriteLine(Thread.CurrentThread.Name + " Trying to enter into the critical section");
@@ -41,7 +35,7 @@ namespace Multithreading
                 Monitor.Enter(lockPrintNumbers);
                 Console.WriteLine(Thread.CurrentThread.Name + " Entered into the critical section");
                 int millisecondsTimeout = 100;
-                
+
                 for (int i = 0; i < 5; i++)
                 {
                     Thread.Sleep(millisecondsTimeout);

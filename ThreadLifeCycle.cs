@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class ThreadLifeCycle
     {
-        public ThreadLifeCycle() {
+        public ThreadLifeCycle()
+        {
             try
             {
                 // Creating and initializing threads Unstarted state

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class ThreadsPriorities
     {
@@ -18,7 +12,7 @@ AboveNormal = 3: The Thread can be scheduled after threads with the Highest prio
 Highest = 4: The Thread can be scheduled before threads with any other priority. That means threads with the Highest Priority can be scheduled before threads with any other priority.
          
          */
-        public ThreadsPriorities() 
+        public ThreadsPriorities()
         {
             Thread thread1 = new Thread(ThreadsPrioritiesMethod)
             {

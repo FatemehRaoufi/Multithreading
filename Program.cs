@@ -1,7 +1,4 @@
-﻿using Multithreading;
-using static Multithreading.ThreadFunction;
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
@@ -68,6 +65,10 @@ class Program
         //threadTerminate.AbortStateInfoEvent();
         //threadTerminate.ThreadAbortEvent();
         //threadTerminate.AbortOnRunningThreadEvent();
+
+
+
+
     }
 }
 //https://dotnettutorials.net/lesson/multithreading-using-monitor/

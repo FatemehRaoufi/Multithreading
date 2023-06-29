@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Runtime.Intrinsics.X86;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Timers;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
 
     internal class AutoResetManualResetEvent
@@ -128,7 +118,7 @@ namespace Multithreading
         }
         //---------------------------------------------
         /// <summary>
-        
+
         /// That is one Set method in ManualResetEvent can release all the WaitOne methods. 
         /// For a better understanding, please have a look at the below example
         /// </summary>
@@ -159,7 +149,7 @@ namespace Multithreading
     }
 }
 
-    //------------------------------------
+//------------------------------------
 
 
 //https://dotnettutorials.net/lesson/autoresetevent-and-manualresetevent-in-csharp/

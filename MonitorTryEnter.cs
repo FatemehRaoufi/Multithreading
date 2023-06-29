@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class MonitorTryEnter
     {
@@ -14,7 +8,7 @@ namespace Multithreading
         /// attempts, for a specified amount of time, to acquire an exclusive lock on the specified object, 
         /// and automatically sets a value that indicates whether the lock was taken or not. 
         /// </summary>
-        public MonitorTryEnter() 
+        public MonitorTryEnter()
         {
             Thread[] Threads = new Thread[3];
             for (int i = 0; i < 3; i++)

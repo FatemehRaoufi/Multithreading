@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     internal class ThreadSynchronizationLock2
     {
-        
-        public ThreadSynchronizationLock2() 
+
+        public ThreadSynchronizationLock2()
         {
             BookMyShow bookMyShow = new BookMyShow();
             Thread thread1 = new Thread(bookMyShow.TicketBookig)
@@ -70,5 +64,5 @@ namespace Multithreading
             }
         }
     }
-    }
+}
 //https://dotnettutorials.net/lesson/thread-synchronization-in-csharp/

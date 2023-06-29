@@ -1,23 +1,17 @@
-﻿
-using System.Collections.Generic;
-using System.Threading;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Threading.Tasks;
-
-namespace Multithreading
+﻿namespace Multithreading
 {
     /// <summary>
     /// if we want more control over the number of external threads that can access our application code, 
     /// then we need to use the Semaphore class in C#.
     /// </summary>
-    
+
     internal class ThreadSynchronizationSemaphore
     {
         public static Semaphore semaphore = null;
-        public ThreadSynchronizationSemaphore() 
-        
+        public ThreadSynchronizationSemaphore()
+
         {
-            
+
         }
         /// <summary>
         /// In the below example, 
